@@ -286,6 +286,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
                   'Mongodb',
                   'DSA : Arrays, Linked Lists, Stacks, Queues, Sorting Algorithms',
                   'OOPs : Classes, Inheritance, Polymorphism, Encapsulation, Abstraction',
+                  'Html,Css,Js',
                   'PyTesseract (OCR)',
                   'PyAutoGUI',
                   'Image Processing',
