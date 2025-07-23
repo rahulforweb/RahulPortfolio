@@ -70,7 +70,7 @@ const AIBootupLoader: React.FC = () => {
   return (
     <div
       className={`fixed inset-0 z-[9999] bg-black flex items-center justify-center overflow-hidden transition-opacity duration-800 ${
-        stage === 'transition' ? 'opacity-0' : 'opacity-100'
+        stage === 'transition' ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
     >
       {/* Central Container */}
