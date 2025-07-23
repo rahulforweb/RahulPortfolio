@@ -87,7 +87,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen overflow-y-auto ${isDarkMode ? 'dark bg-gray-900 text-gray-100' : 'bg-white text-gray-900'} transition-colors duration-300`}>
+    <div className={`min-h-screen ${isDarkMode ? 'dark bg-gray-900 text-gray-100' : 'bg-white text-gray-900'} transition-colors duration-300`}>
       {/* Main Website Content - Always Rendered for Background Loading */}
       <ScrollProgressBar isDarkMode={isDarkMode} />
       <CursorSplash isDarkMode={isDarkMode} />
