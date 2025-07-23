@@ -45,12 +45,14 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <PythonIcon className="w-20 h-20 text-blue-500" />,
       description:
         'Proficient in Python for automation, data analysis, ML basics, and building desktop apps.',
+        projects:'knock knock 👀 - Flip!',
     },
     {
       name: 'SQL/Database',
       icon: <SqlIcon className="w-20 h-20 text-blue-500" />, // Keep Lucide for generic database
       description:
         'Experience in designing and querying relational databases for structured data handling.',
+        projects:'knock knock 👀 - Flip!',
     },
     {
       name: 'pandas/numpy',
@@ -58,6 +60,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Dicons className="w-20 h-20 text-blue-500" />,
       description:
         'Advanced data manipulation, analysis, and processing for trading algorithms and sales analytics.',
+        projects:'knock knock 👀 - Flip!',
     },
     {
       name: 'OpenCV (Computer Vision)',
@@ -65,13 +68,15 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <CvIcon className="w-20 h-20 text-blue-500" />,
       description:
         'Applied in real-time car number plate recognition and video processing projects.',
+        projects:'knock knock 👀 - Flip!',
     },
     {
       name: 'GUI (TKinter)',
 
       icon: <InterfaceIcon className="w-20 h-20 text-blue-500" />,
       description:
-        'Desktop application development with interactive dashboards and user interfaces.',  
+        'Desktop application development with interactive dashboards and user interfaces.',
+        projects:'knock knock 👀 - Flip!',  
 
     },
     {
@@ -79,7 +84,8 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
 
       icon: <Bilogo className="w-20 h-20 text-blue-500" />,
       description:
-        'Business intelligence and data visualization for sales analytics and performance dashboards.',    
+        'Business intelligence and data visualization for sales analytics and performance dashboards.',
+        projects:'knock knock 👀 - Flip!',    
     },
     {
       name: 'API Integration & Websocket',
@@ -87,6 +93,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Apilogo className="w-20 h-20 text-blue-500" />,
       description:
         'WebSocket and REST API integration for real-time data processing and broker connectivity.',
+        projects:'knock knock 👀 - Flip!',
 
     },
     {
@@ -95,6 +102,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Gitlogo className="w-20 h-20 text-blue-500" />,
       description:
         'Version control, project collaboration, and portfolio deployment on GitHub.',
+        projects:'knock knock 👀 - Flip!',
   
     },
     {
@@ -103,6 +111,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Micon className="w-20 h-20 text-blue-500" />,
       description:
         'Applied ML basics in predictive modeling and real-time data analysis.',
+        projects:'knock knock 👀 - Flip!',
 
     },
     {
@@ -111,6 +120,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Dataicon className="w-20 h-20 text-blue-500" />,
       description:
         'Analyzed datasets for trends and patterns using Python and visualization tools.',
+        projects:'knock knock 👀 - Flip!',
 
     },
     {
@@ -119,6 +129,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <OpencvIcon className="w-20 h-20 text-orange-500" />,
       description:
         'Automated web tasks like WhatsApp messaging using Selenium and PyAutoGUI.',
+        projects:'knock knock 👀 - Flip!',
   
     },
     {
@@ -127,6 +138,7 @@ const Skills: React.FC<SkillsProps> = ({ id, isDarkMode }) => {
       icon: <Ailogo className="w-20 h-20 text-blue-500" />,
       description:
         'Efficient use of AI tools to speed up development and creativity.', 
+        projects:'knock knock 👀 - Flip!',
     },
   ];
 
