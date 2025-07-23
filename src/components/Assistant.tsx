@@ -343,36 +343,44 @@ const Assistant: React.FC<AssistantProps> = ({ activeSection, scrollPosition, on
   }, [isCelebrationMessageTyped, showTourAgainPrompt, isInCelebrationMode, isSpeechEnabled]);
 
   useEffect(() => {
-    // Initialize speech synthesis with enhanced settings
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      const synth = window.speechSynthesis;
       speechRef.current = new SpeechSynthesisUtterance();
-      
-      // Get available voices and select a female voice
+
       const setVoice = () => {
-        const voices = window.speechSynthesis.getVoices();
-        const femaleVoice = voices.find(voice => 
-          voice.name.includes('female') || 
-          voice.name.includes('Samantha') || 
+        const voices = synth.getVoices();
+        if (!voices.length) {
+          // Retry after delay if voices not yet loaded
+          setTimeout(setVoice, 250);
+          return;
+        }
+
+        const preferredVoice = voices.find(voice =>
+          voice.name.includes('Google US English') ||
+          voice.name.includes('Samantha') ||
           voice.name.includes('Karen') ||
-          voice.name.includes('Victoria')
-        );
-        
-        if (femaleVoice) {
-          speechRef.current!.voice = femaleVoice;
+          voice.name.includes('female')
+        ) || voices[0];
+  
+        if (preferredVoice) {
+          speechRef.current!.voice = preferredVoice;
         }
       };
 
-      // Handle voice loading
-      if (window.speechSynthesis.onvoiceschanged !== undefined) {
-        window.speechSynthesis.onvoiceschanged = setVoice;
+      // Attempt voice loading immediately
+      setVoice();
+
+      // And again when voices change (if event fires)
+      if (typeof synth.onvoiceschanged !== 'undefined') {
+        synth.onvoiceschanged = setVoice;
       }
-      
-      // Configure speech parameters for more natural sound
-      speechRef.current.rate = 0.9; // Slightly slower for clarity
-      speechRef.current.pitch = 1.1; // Slightly higher pitch for feminine voice
+
+      // Configure your custom tone settings
+      speechRef.current.rate = 0.9;
+      speechRef.current.pitch = 1.1;
       speechRef.current.volume = 0.9;
-      
-      // Add natural pauses after punctuation
+
+      // Natural pauses after punctuation
       speechRef.current.onboundary = (event) => {
         if (event.name === 'word') {
           const word = event.word || '';
@@ -392,6 +400,7 @@ const Assistant: React.FC<AssistantProps> = ({ activeSection, scrollPosition, on
       if (speechRef.current) {
         window.speechSynthesis.cancel();
       }
+      window.speechSynthesis.onvoiceschanged = null;
     };
   }, []);
 
