@@ -292,7 +292,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               }`}
             >
               <Github size={20} />
-              View Source Code
+              View Source Code 🔒
             </a>
 
             {project.liveUrl && (

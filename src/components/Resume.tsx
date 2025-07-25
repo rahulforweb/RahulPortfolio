@@ -83,7 +83,7 @@ const Resume: React.FC<ResumeProps> = ({ id, isDarkMode }) => {
                 className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
               >
                 <Download size={18} />
-                Download Full CV
+                Download Resume
               </a>
             </div>
 
