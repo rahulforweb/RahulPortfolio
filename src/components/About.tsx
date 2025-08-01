@@ -45,29 +45,14 @@ const About: React.FC<AboutProps> = ({ id, isDarkMode }) => {
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   } mb-6 leading-relaxed`}
                 >
-                  After completing my degree in Electrical and Electronics
-                  Engineering, I shifted my focus to software development with a
-                  goal to build tools that support data-driven decision-making.
-                  I gained practical experience through internships,
-                  certifications, and freelance work, building automation tools,
-                  data analysis dashboards, and application- level projects
-                  using Python, Selenium, and basic machine learning
-                  technologies.
+                    After completing my degree in Electrical and Electronics Engineering, I took a dedicated break to explore the stock market, where I developed strong analytical thinking and real-time decision-making skills. While navigating the markets, I realized the need for automation and discovered Python as a tool to simplify and optimize trading processes — which sparked my interest in software development.
                 </p>
                 <p
                   className={`${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   } mb-6 leading-relaxed`}
                 >
-                  Post-graduation, I took a dedicated break to explore the stock
-                  market, where I deepened my analytical thinking and real-time
-                  problem-solving. I’m now focused on applying my technical
-                  skills in a full-time software development role where I can
-                  contribute to meaningful projects, collaborate with
-                  experienced teams, and continue growing as a developer. I'm
-                  passionate about creating efficient, scalable solutions and
-                  continuously learning new technologies to stay at the
-                  forefront of software development.
+                    I shifted my focus to building tools that support data-driven decision-making. Through internships, certifications, and freelance work, I gained hands-on experience in creating automation scripts, data dashboards, and application-level projects using Python, Selenium, and basic machine learning. I'm now looking to contribute to impactful projects, collaborate with experienced teams, and continue growing as a developer in a full-time role.
                 </p>
               </div>
 
