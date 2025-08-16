@@ -82,8 +82,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
         <div className="flex items-center gap-4">
           {/* Download Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1Q5lo5LgJobhxezMrQrVM5coqiX2Nbuqb/view?usp=sharing"
-            target="_blank"
+            href="https://drive.google.com/file/d/1pthQEs7ltDqO7oBRrANd34_IoMrPp06k/view?usp=sharing"
             rel="noopener noreferrer"
             className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${
               isDarkMode

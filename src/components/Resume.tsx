@@ -77,7 +77,7 @@ const Resume: React.FC<ResumeProps> = ({ id, isDarkMode }) => {
 
             <div className="flex justify-center mb-12">
               <a
-                href="https://drive.google.com/file/d/1Q5lo5LgJobhxezMrQrVM5coqiX2Nbuqb/view?usp=sharing"
+                href="https://drive.google.com/file/d/1pthQEs7ltDqO7oBRrANd34_IoMrPp06k/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
